@@ -1,0 +1,34 @@
+#Sida1{
+display: grid;
+grid-template-areas: 
+"hd hd hd nav"
+"mn mn mn as "
+"mn mn mn as "
+"ft ft ft ft "
+;
+
+}
+
+head{
+grid-area: hd;
+
+
+}
+
+main{
+grid-area: mn;
+
+
+
+}
+
+nav{
+grid-area: nav;
+
+}
+
+footer{
+grid-area: footer;
+
+
+}
