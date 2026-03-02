@@ -1,6 +1,8 @@
 #Sida1{
 display: grid;
-grid-template-areas: 
+grid-template-columns: 20fr 1;
+
+grid-template-areas:
 "hd hd hd nav"
 "mn mn mn as "
 "mn mn mn as "
@@ -11,24 +13,78 @@ grid-template-areas:
 
 head{
 grid-area: hd;
-
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
 
 }
 
 main{
 grid-area: mn;
-
-
-
+  background: white;
+  padding: 20px;
+  min-height: 150px;
 }
 
 nav{
 grid-area: nav;
+  color: white;
+  padding: 20px;
+  min-height: 300px;
 
 }
 
 footer{
 grid-area: footer;
+
+
+}
+
+
+@media screen and (max-width: 800px){
+
+#Sida1{
+display: grid;
+grid-template-areas: 
+"hd hd hd nav"
+"mn mn mn as "
+"mn mn mn as "
+"ft ft ft ft "
+;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
