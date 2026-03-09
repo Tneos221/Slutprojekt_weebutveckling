@@ -1,46 +1,48 @@
-#Sida1{
-display: grid;
-grid-template-columns: 20fr 1;
+#Sida1 {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 1fr; 
+  grid-template-rows: auto 1fr auto;      
 
-grid-template-areas:
-"hd hd hd nav"
-"mn mn mn as "
-"mn mn mn as "
-"ft ft ft ft "
-;
+  grid-template-areas:
+    "hd hd hd sb"  
+    "mn mn mn sb"   
+    "ft ft ft ft";  
 
+  min-height: 100vh;
+  margin: 0;
 }
 
-head{
-grid-area: hd;
-  color: white;
+header {
+  grid-area: hd;
+  background-color: #333;
+  color: rgb(241, 19, 19);
   padding: 20px;
   text-align: center;
   font-size: 24px;
-
 }
 
-main{
-grid-area: mn;
-  background: white;
+main {
+  grid-area: mn;
+  background: rgb(174, 20, 20);
   padding: 20px;
   min-height: 150px;
 }
 
-nav{
-grid-area: nav;
-  color: white;
+.sidebar { 
+  grid-area: sb;
+  background-color: #555;
+  color: rgb(225, 18, 18);
   padding: 20px;
   min-height: 300px;
-
 }
 
-footer{
-grid-area: footer;
-
-
+footer {
+  grid-area: ft;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-
 
 @media screen and (max-width: 800px){
 
@@ -57,34 +59,4 @@ grid-template-areas:
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
