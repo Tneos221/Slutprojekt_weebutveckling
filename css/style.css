@@ -1,84 +1,84 @@
-#Sida1 {
-  display: grid;
-  grid-template-columns: 3fr 1fr; 
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-    "hd nav"
-    "mn mn"
-    "mn2 img"
-    "mn3 mn4"
-    "mn5 ft";
-  min-height: 200vh;
-
+body {
+  font-family: Georgia, serif;
+  margin: 0px;
 }
-html, body{
-margin: 0;
-padding: 0;
+
+
+.sida1 {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  min-height: 100vh;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 header {
-  grid-area: hd;
-  background-color: #333;
-  padding: 10px;  
+  background-color: #5C3D2E;
+  color: white;
+  padding: 20px;
   text-align: center;
-    font-size: 5
-    em;  
-  font-weight: bold;  
+  font-size: 2em;
 }
 
+header span {
+  color: #C8A96E;
+  font-style: italic;
+}
+
+header p {
+  font-size: 0.5em;
+  margin-top: 0px;
+}
 
 nav {
-  grid-area: nav;
-  background-color: #333;
+  background-color: #3d2518;
   color: white;
   padding: 20px;
 }
 
-
-.main1 {
-  grid-area: mn;
-  background: rgb(174, 20, 20);
-  padding: 20px;
+nav a {
+  color: #C8A96E;
+  text-decoration: none;
 }
 
-.main2 {
-  grid-area: mn2;
-  background: #ffffff;
-  padding: 20px;
-}
-
-.main3 {
-  grid-area: mn3;
-  background: #ffffff;
-  padding: 20px;
-}
-
-.main4 {
-  grid-area: mn4;
-  background: #d35400;
-  padding: 20px;
-}
-
-.main5 {
-  grid-area: mn5;
-  background: #e67e22;
-  padding: 20px;
-}
-
-
-.img {
-  grid-area: img;
-  background: #777;
-  padding: 20px;
-}
-
-
-footer {
-  grid-area: ft;
-  background-color: #e67e22;
-  color: white;
-  padding: 20px;
+.main {
+  background: #F5EFE6;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.main h2 {
+  color: #5C3D2E;
+}
+
+.main p {
+  max-width: 600px;
+  margin: 0px auto;
+  color: #8C7060;
+}
+
+.main button {
+  padding: 12px 30px;
+  background: #C0603A;
+  color: white;
+  border: none;
+}
+
+.footer {
+  background: #C0603A;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer button {
+  padding: 12px 30px;
+  background: white;
+  color: #C0603A;
+  border: none;
 }
 @media screen and (max-width: 800px){
 
