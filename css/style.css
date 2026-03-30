@@ -3,12 +3,11 @@ body {
   margin: 0px;
 }
 
-
 .sida1 {
   display: grid;
   grid-template-rows: auto auto auto;
   min-height: 100vh;
-}
+}                            
 
 .intro-section {
   display: grid;
@@ -45,19 +44,21 @@ nav a {
 }
 
 .main {
-  background: #F5EFE6;
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../img/nedladdning.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 50px 20px;
   text-align: center;
 }
 
 .main h2 {
-  color: #5C3D2E;
+  color: white;
 }
 
 .main p {
   max-width: 600px;
   margin: 0px auto;
-  color: #8C7060;
+  color: white;
 }
 
 .main button {
@@ -80,6 +81,135 @@ nav a {
   color: #C0603A;
   border: none;
 }
+
+
+.meny-hero {
+  background-color: #C0603A;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.meny-hero h1 {
+  font-size: 2.4em;
+  margin: 0 0 10px;
+}
+
+.meny-hero h1 em {
+  font-style: italic;
+  color: #FAEEDA;
+}
+
+.meny-hero p {
+  font-size: 0.95em;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.meny-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.meny-section {
+  margin-bottom: 48px;
+}
+
+.meny-section-title {
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C0603A;
+  margin-bottom: 6px;
+}
+
+.meny-section h2 {
+  font-size: 1.8em;
+  color: #5C3D2E;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #C0603A;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.dish-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid #e0d5c8;
+}
+
+.dish-info { flex: 1; }
+
+.dish-name {
+  color: #5C3D2E;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.dish-desc {
+  color: #8C7060;
+  font-size: 0.85em;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.dish-tags {
+  margin-top: 5px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.68em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+}
+
+.tag-veg     { background: #EAF3DE; color: #3B6D11; }
+.tag-spicy   { background: #FAECE7; color: #993C1D; }
+.tag-popular { background: #FAEEDA; color: #854F0B; }
+
+.dish-price {
+  color: #C0603A;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0 40px;
+  color: #C8A96E;
+  font-size: 1.2em;
+  letter-spacing: 8px;
+}
+
+.allergen-note {
+  background: #F5EFE6;
+  border-left: 3px solid #C8A96E;
+  padding: 16px 20px;
+  margin-top: 20px;
+  font-size: 0.82em;
+  color: #8C7060;
+  line-height: 1.7;
+}
+
+footer {
+  background: #3d2518;
+  color: #C8A96E;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.82em;
+}
+
+footer p { margin: 4px 0; }
 @media screen and (max-width: 800px){
 
 #Sida1{
