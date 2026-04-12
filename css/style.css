@@ -3,6 +3,10 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sida1 {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -66,6 +70,7 @@ nav a {
   background: #C0603A;
   color: white;
   border: none;
+  margin-top: 20px;   
 }
 
 .footer {
@@ -80,6 +85,7 @@ nav a {
   background: white;
   color: #C0603A;
   border: none;
+  margin-top: 20px;   
 }
 
 
@@ -209,6 +215,128 @@ footer {
   font-size: 0.82em;
 }
 
+.sida3-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 80vh;
+}
+
+.sida3-left {
+  background: #FAF6F0;
+  padding: 50px 40px;
+}
+
+.sida3-left h2 {
+  color: #5C3D2E;
+  font-size: 1.8em;
+  margin: 0 0 6px;
+}
+
+.sida3-h2 {
+  margin-top: 40px !important;
+}
+
+.sida3-sub {
+  color: #C0603A;
+  font-size: 0.75em;
+  letter-spacing: 0.18em;
+  margin: 0 0 20px;
+}
+
+.sida3-left p {
+  color: #8C7060;
+  font-size: 0.95em;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.sida3-hours {
+  background: white;
+  border: 1px solid #e0d5c8;
+}
+
+.sida3-hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-bottom: 1px solid #f0e8df;
+  font-size: 0.9em;
+}
+
+.sida3-hours-row:last-child {
+  border-bottom: none;
+}
+
+.sida3-hours-row span:first-child {
+  color: #5C3D2E;
+}
+
+.sida3-hours-row span:last-child {
+  color: #C0603A;
+  font-weight: bold;
+}
+
+.sida3-hours-row.closed span:last-child {
+  color: #8C7060;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.sida3-right {
+  background: #5C3D2E;
+  padding: 40px 28px;
+  color: white;
+}
+
+.sida3-right h2 {
+  color: #C8A96E;
+  font-size: 1.4em;
+  margin: 0 0 16px;
+}
+
+.sida3-line {
+  border: none;
+  border-top: 1px solid rgba(200,169,110,0.3);
+  margin-bottom: 24px;
+}
+
+.sida3-info-block {
+  margin-bottom: 20px;
+}
+
+.sida3-label {
+  color: #C8A96E;
+  font-size: 0.7em;
+  letter-spacing: 0.15em;
+  margin-bottom: 4px;
+}
+
+.sida3-value {
+  color: #e0c9a8;
+  font-size: 0.88em;
+  line-height: 1.6;
+}
+
+.sida3-map {
+  background: rgba(0,0,0,0.2);
+  color: #C8A96E;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.82em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.sida3-note {
+  margin-top: 20px;
+  background: rgba(192,96,58,0.25);
+  border-left: 3px solid #C0603A;
+  padding: 12px 14px;
+  font-size: 0.82em;
+  color: #e0c9a8;
+  line-height: 1.6;
+}
+
 footer p { margin: 4px 0; }
 @media screen and (max-width: 800px){
 
@@ -220,9 +348,6 @@ grid-template-areas:
 "mn mn mn as "
 "ft ft ft ft "
 ;
-
-
-
-
 }
+
 }
