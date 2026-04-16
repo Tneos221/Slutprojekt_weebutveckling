@@ -337,17 +337,59 @@ footer {
   line-height: 1.6;
 }
 
-footer p { margin: 4px 0; }
-@media screen and (max-width: 800px){
-
-#Sida1{
-display: grid;
-grid-template-areas: 
-"hd hd hd nav"
-"mn mn mn as "
-"mn mn mn as "
-"ft ft ft ft "
-;
+header img {
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 12px;
 }
+
+
+footer p { margin: 4px 0; }
+@media screen and (max-width: 800px) {
+
+  .intro-section {
+    grid-template-columns: 1fr; 
+  }
+
+  .sida3-grid {
+    grid-template-columns: 1fr;  
+  }
+
+  header {
+    font-size: 1.4em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main {
+    padding: 30px 16px;
+  }
+
+  .main button,
+  .footer button {
+    width: 100%;
+  }
+
+  .dish-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .dish-price {
+    margin-left: 0;
+  }
+
+  .meny-content {
+    padding: 30px 16px;
+  }
+
+  .sida3-left {
+    padding: 30px 20px;
+  }
 
 }
