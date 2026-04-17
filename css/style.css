@@ -24,7 +24,12 @@ header {
   padding: 20px;
   text-align: center;
   font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
+
 
 header span {
   color: #C8A96E;
@@ -33,7 +38,8 @@ header span {
 
 header p {
   font-size: 0.5em;
-  margin-top: 0px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
 nav {
@@ -338,12 +344,10 @@ footer {
 }
 
 header img {
-  height: 60px;
+  height: 120px;
   vertical-align: middle;
   margin-right: 12px;
 }
-
-
 footer p { margin: 4px 0; }
 @media screen and (max-width: 800px) {
 
